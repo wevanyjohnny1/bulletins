@@ -1,0 +1,88 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Bulletins Documentation",
+    "description": "API Description",
+    "version": "1.0.0",
+    "contact": {
+      "email": "wevanyjohnny@gmail.com"
+    }
+  },
+  "paths": {
+    "/activities": {
+      "post": {
+        "tags": [
+          "Activity"
+        ],
+        "summary": "Create a activity",
+        "description": "Create a new activity",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "number"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "color": {
+                    "type": "string"
+                  }
+                },
+                "example": {
+                  "code": 42,
+                  "description": "my activity",
+                  "color": "#FAFAF0"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Activity already exists!"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Activity"
+        ],
+        "summary": "List all activities",
+        "description": "List all activities",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "number"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "color": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,28 +1,14 @@
+import { CreateActivityController } from '@modules/bulletins/useCases/createActivity/CreateActivityController';
+import { ListActivitiesController } from '@modules/bulletins/useCases/listActivities/ListActivitiesController';
 import { Router } from 'express';
 
-import { ActivitiesRepository } from '../repositories/ActivitiesRepository';
-
 const activitiesRoutes = Router();
-const activitiesRepository = new ActivitiesRepository();
 
-activitiesRoutes.post('/', (request, response) => {
-  const { code, description, color } = request.body;
+const createActivityController = new CreateActivityController();
+const listAcitivitesController = new ListActivitiesController();
 
-  const activityAlreadyExists = activitiesRepository.findByCode(code);
+activitiesRoutes.post('/', createActivityController.handle);
 
-  if (activityAlreadyExists) {
-    return response.status(400).json({ error: 'Activity already exists!' });
-  }
-
-  activitiesRepository.create({ code, description, color });
-
-  return response.status(201).send(201);
-});
-
-activitiesRoutes.get('/', (request, response) => {
-  const activities = activitiesRepository.list();
-
-  return response.json(activities);
-});
+activitiesRoutes.get('/', listAcitivitesController.handle);
 
 export { activitiesRoutes };

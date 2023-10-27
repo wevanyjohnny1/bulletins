@@ -1,0 +1,30 @@
+version: "3.7"
+
+services:
+  database_bulletins:
+    image: postgres
+    container_name: database_bulletins
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=bulletins
+      - POSTGRES_DB=bulletins
+    volumes:
+      - pgdata:/data/postgres
+  app:
+    build: .
+    container_name: bulletins
+    ports:
+      - 3333:3333
+    volumes:
+      - .:/usr/app
+    links:
+      - database_bulletins
+    depends_on:
+      - database_bulletins
+
+volumes:
+  pgdata:
+    driver: local
