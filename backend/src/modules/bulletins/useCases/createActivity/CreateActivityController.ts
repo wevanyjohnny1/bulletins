@@ -9,9 +9,9 @@ class CreateActivityController {
 
     const createActivityUseCase = container.resolve(CreateActivityUseCase);
 
-    await createActivityUseCase.execute({ code, description, color });
+    const activity = await createActivityUseCase.execute({ code, description, color });
 
-    return response.status(201).send();
+    return response.status(201).json(activity);
   }
 }
 

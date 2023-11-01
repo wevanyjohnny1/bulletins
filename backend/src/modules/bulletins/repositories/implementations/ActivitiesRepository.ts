@@ -10,19 +10,14 @@ class ActivitiesRepository implements IActivitiesRepository {
     this.repository = getRepository(Activity);
   }
 
-  // public static getInstance(): ActivitiesRepository {
-  //   if (!ActivitiesRepository.INSTANCE) {
-  //     ActivitiesRepository.INSTANCE = new ActivitiesRepository();
-  //   }
-  //   return ActivitiesRepository.INSTANCE;
-  // }
-
-  async create({ code, color, description }: ICreateActivityDTO): Promise<void> {
+  async create({ code, color, description }: ICreateActivityDTO): Promise<Activity> {
     const activity = this.repository.create({
       code, color, description,
     });
 
     await this.repository.save(activity);
+
+    return activity;
   }
 
   async list(): Promise<Activity[]> {

@@ -1,4 +1,5 @@
 import { AppError } from '@errors/AppError';
+import { Activity } from '@modules/bulletins/entities/Activity';
 import { IActivitiesRepository } from '@modules/bulletins/repositories/IActivitiesRepository';
 import { inject, injectable } from 'tsyringe';
 
@@ -17,14 +18,16 @@ class CreateActivityUseCase {
 
   }
 
-  async execute({ code, color, description }: IRequest): Promise<void> {
+  async execute({ code, color, description }: IRequest): Promise<Activity> {
     const activityAlreadyExists = await this.activitiesRepository.findByCode(code);
 
     if (activityAlreadyExists) {
       throw new AppError('Activity already exists!', 401);
     }
 
-    this.activitiesRepository.create({ code, description, color });
+    const activity = this.activitiesRepository.create({ code, description, color });
+
+    return activity;
   }
 }
 

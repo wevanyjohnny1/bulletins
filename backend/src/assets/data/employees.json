@@ -1,29 +1,30 @@
 [
-    {
-    	"id": 1,
-    	"name": "Employee 1",
-    	"code": "1",
-    	"active": true,
-      "image": "https://raw.githubusercontent.com/daltondiaz/test-frontend/main/assets/images/employee1.png"
-    },
-    {
-    	"id": 2,
-    	"name": "Employee 11",
-    	"code": "3",
-    	"active": true,
-      "image": "https://raw.githubusercontent.com/daltondiaz/test-frontend/main/assets/images/employee2.png"
-    },
-    {
-    	"id": 3,
-    	"name": "Employee 17",
-    	"code": "5",
-    	"active": true,
-      "image": "https://raw.githubusercontent.com/daltondiaz/test-frontend/main/assets/images/employee3.png"
-    },{
-    	"id": 4,
-    	"name": "Employee 13",
-    	"code": "7",
-    	"active": true,
-      "image": "https://raw.githubusercontent.com/daltondiaz/test-frontend/main/assets/images/employee4.png"
-    }
+	{
+		"id": "3b9a3db8-22d5-4103-8ca9-460179747a16",
+		"name": "Employee 1",
+		"code": "1",
+		"active": true,
+		"image": "https://raw.githubusercontent.com/daltondiaz/test-frontend/main/assets/images/employee1.png"
+	},
+	{
+		"id": "27901ce6-4c26-432b-a683-146ce1976612",
+		"name": "Employee 11",
+		"code": "3",
+		"active": true,
+		"image": "https://raw.githubusercontent.com/daltondiaz/test-frontend/main/assets/images/employee2.png"
+	},
+	{
+		"id": "e7eb667e-4910-4edb-9e03-a5b97191a132",
+		"name": "Employee 17",
+		"code": "5",
+		"active": true,
+		"image": "https://raw.githubusercontent.com/daltondiaz/test-frontend/main/assets/images/employee3.png"
+	},
+	{
+		"id": "ec479073-0973-462a-964f-4719aa3a47f2",
+		"name": "Employee 13",
+		"code": "7",
+		"active": true,
+		"image": "https://raw.githubusercontent.com/daltondiaz/test-frontend/main/assets/images/employee4.png"
+	}
 ]

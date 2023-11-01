@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { AppError } from '@errors/AppError';
+import cors from 'cors';
 import express, { NextFunction, Response, Request } from 'express';
 import 'express-async-errors';
 import swaggerUi from 'swagger-ui-express';
@@ -11,6 +12,8 @@ import './database';
 import './shared/container';
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 

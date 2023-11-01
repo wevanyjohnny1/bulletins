@@ -9,7 +9,7 @@ interface ICreateActivityDTO {
 interface IActivitiesRepository {
   findByCode(code: number): Promise<Activity>
   list(): Promise<Activity[]>
-  create({ code, description, color }: ICreateActivityDTO): Promise<void>
+  create({ code, description, color }: ICreateActivityDTO): Promise<Activity>
 }
 
 export { IActivitiesRepository, ICreateActivityDTO };

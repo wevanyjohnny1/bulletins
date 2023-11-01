@@ -5,10 +5,10 @@ import { Router } from 'express';
 const activitiesRoutes = Router();
 
 const createActivityController = new CreateActivityController();
-const listAcitivitesController = new ListActivitiesController();
+const listActivitiesController = new ListActivitiesController();
 
 activitiesRoutes.post('/', createActivityController.handle);
 
-activitiesRoutes.get('/', listAcitivitesController.handle);
+activitiesRoutes.get('/', listActivitiesController.handle);
 
 export { activitiesRoutes };

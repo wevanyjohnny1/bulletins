@@ -1,0 +1,98 @@
+[
+  {
+    "id": "75a14ab0-4460-42d6-90c4-ebc0a3809bd6",
+    "startDate": "2023-10-01 01:00:00",
+    "endDate": "2023-10-01 12:00:00",
+    "activity_id": "7d46630f-c5a0-405a-ae01-f938e3863863"
+  },
+  {
+    "id": "5ad455ce-30ad-4e23-888c-5c50b1c14799",
+    "startDate": "2023-10-01 02:00:00",
+    "endDate": "2023-10-01 12:00:00",
+    "activity_id": "3b65f5e3-aadf-44ab-8d36-8e203e4c8b73"
+  },
+  {
+    "id": "9981d983-cc01-4da6-bd6f-d369e38dbe9e",
+    "startDate": "2023-10-01 03:00:00",
+    "endDate": "2023-10-01 12:00:00",
+    "activity_id": "ad9b9d85-651a-4ab3-98de-a434892c5213"
+  },
+  {
+    "id": "d7d0b5fa-d802-400d-a28f-13d1083fae21",
+    "startDate": "2023-10-01 08:30:00",
+    "endDate": "2023-10-01 12:00:00",
+    "activity_id": "7d46630f-c5a0-405a-ae01-f938e3863863"
+  },
+  {
+    "id": "169012fe-366f-480b-b27f-59749776ca19",
+    "startDate": "2023-10-01 08:00:00",
+    "endDate": "2023-10-01 12:30:00",
+    "activity_id": "ad9b9d85-651a-4ab3-98de-a434892c5213"
+  },
+  {
+    "id": "be8c0309-d3cd-4688-9ae2-a83cbf3040a4",
+    "startDate": "2023-10-01 01:30:20",
+    "endDate": "2023-10-01 12:10:00",
+    "activity_id": "ce1df369-9180-42a5-8a11-0dc7f2de0b6f"
+  },
+  {
+    "id": "ab9eb5b6-6be7-448c-bf1b-5af16f0a2656",
+    "startDate": "2023-10-01 08:00:00",
+    "endDate": "2023-10-01 12:00:00",
+    "activity_id": "ad9b9d85-651a-4ab3-98de-a434892c5213"
+  },
+  {
+    "id": "8248f712-ffa0-4f50-bde9-6d46831c9505",
+    "startDate": "2023-10-01 08:30:00",
+    "endDate": "2023-10-01 12:00:00",
+    "activity_id": "7d46630f-c5a0-405a-ae01-f938e3863863"
+  },
+  {
+    "id": "8e492723-f827-4ad4-b139-f63fa5ba445a",
+    "startDate": "2023-10-01 08:10:00",
+    "endDate": "2023-10-01 12:00:00",
+    "activity_id": "ad9b9d85-651a-4ab3-98de-a434892c5213"
+  },
+  {
+    "id": "2cc7e5cd-0027-49af-b309-43a2ff604dc1",
+    "startDate": "2023-10-01 08:10:00",
+    "endDate": "2023-10-01 12:00:00",
+    "activity_id": "ce1df369-9180-42a5-8a11-0dc7f2de0b6f"
+  },
+  {
+    "id": "69236e16-fe79-4584-9f7d-2fdb8bb487e6",
+    "startDate": "2023-10-01 02:00:00",
+    "endDate": "2023-10-01 12:00:00",
+    "activity_id": "7d46630f-c5a0-405a-ae01-f938e3863863"
+  },
+  {
+    "id": "df9c41da-f145-4337-897e-f11a13bec92f",
+    "startDate": "2023-10-01 08:00:00",
+    "endDate": "2023-10-01 21:00:00",
+    "activity_id": "ad9b9d85-651a-4ab3-98de-a434892c5213"
+  },
+  {
+    "id": "6aa9af67-abe7-4518-a8ac-6c879aa93d65",
+    "startDate": "2023-10-01 08:00:00",
+    "endDate": "2023-10-01 22:00:00",
+    "activity_id": "7d46630f-c5a0-405a-ae01-f938e3863863"
+  },
+  {
+    "id": "a93db82e-44cc-4fb0-91be-c4b02f5f3621",
+    "startDate": "2023-10-01 08:00:00",
+    "endDate": "2023-10-01 14:00:00",
+    "activity_id": "ad9b9d85-651a-4ab3-98de-a434892c5213"
+  },
+  {
+    "id": "79d0f896-1bb1-498c-90bb-788aeea4330c",
+    "startDate": "2023-10-01 08:00:00",
+    "endDate": "2023-10-01 13:00:00",
+    "activity_id": "ce1df369-9180-42a5-8a11-0dc7f2de0b6f"
+  },
+  {
+    "id": "5dd3e366-ce93-4f4c-b88b-a41f96804846",
+    "startDate": "2023-10-01 08:00:00",
+    "endDate": "2023-10-01 14:30:00",
+    "activity_id": "ad9b9d85-651a-4ab3-98de-a434892c5213"
+  }
+]
