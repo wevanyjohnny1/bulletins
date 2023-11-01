@@ -32,7 +32,9 @@
         <p class="text-red-500 mt-2" v-if="errorMessage">{{ errorMessage }}</p>
       </form>
       <div class="mt-4">
-        <p>Não tem uma conta? <a href="/signup" class="text-blue-500">Criar uma conta</a></p>
+        <RouterLink :to="{ name: 'signup' }" class="text-blue-500">
+          Criar uma conta
+        </RouterLink>
       </div>
     </div>
   </div>
@@ -40,7 +42,7 @@
 
 <script>
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRouter, RouterLink } from 'vue-router';
 import AccountsService from '../services/AccountsService';
 
 export default {
